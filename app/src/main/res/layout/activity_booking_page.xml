@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E1214"
+    android:orientation="vertical"
+    tools:context=".BookingPage">
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/titleTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="@font/nunito_sans_black"
+            android:gravity="center|end"
+            android:paddingEnd="10dp"
+            android:text="₱0"
+            android:textColor="#4e0315"
+            android:textSize="24dp"
+            android:translationZ="100dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttonbackground2"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:gravity="center|start"
+            android:paddingStart="20dp"
+            android:text="Review Booking"
+            android:textColor="#4E0315"
+            android:textSize="16sp" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/baseline_arrow_back_24"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/titleWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:fontFamily="@font/nunito_sans_black"
+                android:text="New Booking"
+                android:textColor="#FFF1F1"
+                android:textSize="34sp" />
+
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="Event Name"
+                    android:textColor="#FFF1F1"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editEventName"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito_sans"
+                    android:hint="Nash's Birthday"
+                    android:inputType="text"
+                    android:paddingStart="15dp"
+                    android:textColor="#fff1f1"
+                    android:textColorHint="#6BFFFFFF" />
+
+                <TextView
+                    android:id="@+id/titleEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="Type"
+                    android:textColor="#FFF1F1"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonWedding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2.5dp"
+                        android:layout_marginEnd="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonbackground3"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Wedding" />
+
+                    <Button
+                        android:id="@+id/buttonBirthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2.5dp"
+                        android:layout_marginEnd="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonbackground3"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Birthday" />
+
+                    <Button
+                        android:id="@+id/buttonCorpo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2.5dp"
+                        android:layout_marginEnd="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonbackground3"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Corporate" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonbackground3"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="Other" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titleOther"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Other"
+                        android:textColor="#FFF1F1"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/editOther"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/inputbackground"
+                        android:ems="10"
+                        android:fontFamily="@font/nunito_sans"
+                        android:hint="Specify"
+                        android:inputType="text"
+                        android:paddingStart="15dp"
+                        android:textColor="#fff1f1"
+                        android:textColorHint="#6BFFFFFF" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/titlePackage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="Packages"
+                    android:textColor="#FFF1F1"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonPackageA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2.5dp"
+                        android:layout_marginEnd="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonbackground3"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Package A" />
+
+                    <Button
+                        android:id="@+id/buttonPackageB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2.5dp"
+                        android:layout_marginEnd="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonbackground3"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Package B" />
+
+                    <Button
+                        android:id="@+id/PackageC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2.5dp"
+                        android:layout_marginEnd="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonbackground3"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Package C" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/titlePackageDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Package Details: "
+                    android:textColor="#FFF1F1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/titlePackageDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="@array/PackageA"
+                    android:textColor="#FFF1F1"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/titlePackageTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@array/PackagePriceA"
+                    android:textColor="#FFF1F1"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/titleDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="Date"
+                    android:textColor="#FFF1F1"
+                    android:textSize="16sp" />
+
+
+                <EditText
+                    android:id="@+id/editDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito_sans"
+                    android:hint="03/23/2025"
+                    android:inputType="text"
+                    android:paddingStart="15dp"
+                    android:textColor="#fff1f1"
+                    android:textColorHint="#6BFFFFFF" />
+
+                <TextView
+                    android:id="@+id/titleTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="Time"
+                    android:textColor="#FFF1F1"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito_sans"
+                    android:hint="3pm"
+                    android:inputType="text"
+                    android:paddingStart="15dp"
+                    android:textColor="#fff1f1"
+                    android:textColorHint="#6BFFFFFF" />
+
+                <TextView
+                    android:id="@+id/titleLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="Location"
+                    android:textColor="#FFF1F1"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito_sans"
+                    android:hint="Bella Plaza Tarlac"
+                    android:inputType="text"
+                    android:paddingStart="15dp"
+                    android:textColor="#fff1f1"
+                    android:textColorHint="#6BFFFFFF" />
+
+                <TextView
+                    android:id="@+id/titleDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="Duration"
+                    android:textColor="#FFF1F1"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito_sans"
+                    android:hint="6 Hours"
+                    android:inputType="text"
+                    android:paddingStart="15dp"
+                    android:textColor="#fff1f1"
+                    android:textColorHint="#6BFFFFFF" />
+
+                <TextView
+                    android:id="@+id/titleProps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="Props"
+                    android:textColor="#FFF1F1"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editProps"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito_sans"
+                    android:hint="Vehicles, etc..."
+                    android:inputType="text"
+                    android:paddingStart="15dp"
+                    android:textColor="#fff1f1"
+                    android:textColorHint="#6BFFFFFF" />
+
+                <TextView
+                    android:id="@+id/titleTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="Theme"
+                    android:textColor="#FFF1F1"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito_sans"
+                    android:hint="Bohemian"
+                    android:inputType="text"
+                    android:paddingStart="15dp"
+                    android:textColor="#fff1f1"
+                    android:textColorHint="#6BFFFFFF" />
+
+                <TextView
+                    android:id="@+id/titleAdds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="Additional Services"
+                    android:textColor="#FFF1F1"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonAddA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2.5dp"
+                        android:layout_marginEnd="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonbackground3"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Hair and Makeup" />
+
+                    <Button
+                        android:id="@+id/buttonAddB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2.5dp"
+                        android:layout_marginEnd="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonbackground3"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Photo Album" />
+
+                    <Button
+                        android:id="@+id/AddC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2.5dp"
+                        android:layout_marginEnd="2.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonbackground3"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Get all Softcopy" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E1214"
+    android:orientation="vertical"
+    tools:context=".CreateAccount" >
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#00FFFFFF"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/testLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="Create an Account."
+            android:textColor="#fff1f1"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/textView123"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Name"
+            android:textColor="#fff1f1"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/inputbackground"
+            android:ems="10"
+            android:fontFamily="@font/nunito_sans"
+            android:hint="John Doe"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:textColor="#fff1f1"
+            android:textColorHint="#6BFFFFFF" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Email"
+            android:textColor="#fff1f1"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/inputbackground"
+            android:ems="10"
+            android:fontFamily="@font/nunito_sans"
+            android:hint="email@gmail.com"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:textColor="#fff1f1"
+            android:textColorHint="#6BFFFFFF" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Password"
+            android:textColor="#fff1f1"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/inputbackground"
+            android:ems="10"
+            android:fontFamily="@font/nunito_sans"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:textColor="#fff1f1"
+            android:textColorHint="#6BFFFFFF" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Confirm Password"
+            android:textColor="#fff1f1"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextCPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/inputbackground"
+            android:ems="10"
+            android:fontFamily="@font/nunito_sans"
+            android:hint="Confirm Password"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:textColor="#fff1f1"
+            android:textColorHint="#6BFFFFFF" />
+        <TextView
+            android:id="@+id/textWrongPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/nunito_sans"
+            android:visibility="invisible"
+            android:gravity="end"
+            android:text="Wrong Password."
+            android:textColor="#ffa2a9"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/buttonCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical|start|end"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="Create Account"
+            android:textColor="#4e0314" />
+
+    </LinearLayout>
+
+</LinearLayout>

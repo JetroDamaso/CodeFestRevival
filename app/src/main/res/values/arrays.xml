@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="PackageA" >
+        <item>"-15 Pieces 8r PRINT.\n-5 Pieces 3r PRINT.\n-Top 20 Editor Picks Pictures."</item>
+    </string-array>
+    <string-array name="PackageB" >
+        <item>"-15 Pieces 8r PRINT.\n-5 Pieces 3r PRINT.\n-Hair and Make-up.\n-Top 20 Editor Picks Pictures."</item>
+    </string-array>
+    <string-array name="PackageC" >
+        <item>"-2 Pieces 8r PRINT with Glass FRAME.\n-10 Pieces 5r PRINT.\n-18 Pieces 3r PRINT.\n-Top 30 Best Images with Soft Copies."</item>
+    </string-array>
+    <string-array name="PackagePriceA">
+        <item>"Package Price: ₱599.00"</item>
+    </string-array>
+    <string-array name="PackagePriceB">
+        <item>"Package Price: ₱999.00"</item>
+    </string-array>
+    <string-array name="PackagePriceC">
+        <item>"Package Price: ₱1499.00"</item>
+    </string-array>
+</resources>
